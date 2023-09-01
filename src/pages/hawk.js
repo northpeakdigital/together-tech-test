@@ -5,6 +5,7 @@ import FullImage from "~/components/toms/fullImage";
 import LogoMarquee from "~/components/toms/logoMarquee";
 import ImageSwitcher from "~/components/toms/imageSwitcher";
 import TextReader from "~/components/toms/textReader";
+import HeroTitleCta from "~/components/toms/heroTitleCta";
 
 function HawkPage() {
 	return (
@@ -14,6 +15,7 @@ function HawkPage() {
 			<LogoMarquee />
 			<ImageSwitcher />
 			<TextReader />
+			<HeroTitleCta />
 		</Layout>
 	);
 }
