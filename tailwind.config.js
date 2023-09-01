@@ -6,6 +6,7 @@ module.exports = {
 			wisdom: "#AFB9B4",
 			experience: "#D4DCD8",
 			profound: "#69726E",
+			sage: "#2c3633",
 			"dark-text": "#1F2725",
 		},
 		container: (theme) => ({

@@ -4,6 +4,7 @@ import Layout from "~/components/toms/layout";
 import FullImage from "~/components/toms/fullImage";
 import LogoMarquee from "~/components/toms/logoMarquee";
 import ImageSwitcher from "~/components/toms/imageSwitcher";
+import TextReader from "~/components/toms/textReader";
 
 function HawkPage() {
 	return (
@@ -12,6 +13,7 @@ function HawkPage() {
 			<FullImage path="/images/home.jpg" />
 			<LogoMarquee />
 			<ImageSwitcher />
+			<TextReader />
 		</Layout>
 	);
 }
