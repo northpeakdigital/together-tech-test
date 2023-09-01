@@ -1,7 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Button from "../button";
 
 function Intro() {
 	return (
@@ -16,11 +15,7 @@ function Intro() {
 			<h2 className="text-md mx-auto mb-4 max-w-xl md:mb-8 md:text-xl">
 				Hawk empowers Public Safety agencies to make mission-critical decisions in real-time.
 			</h2>
-			<Link href="/">
-				<a className="inline-block bg-pinpoint p-4 px-6 text-dark-text transition-all duration-700 hover:bg-dark-text hover:text-pinpoint">
-					<span>Get started</span>
-				</a>
-			</Link>
+			<Button text="Get started" url="/" />
 		</motion.div>
 	);
 }
