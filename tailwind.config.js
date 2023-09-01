@@ -4,6 +4,8 @@ module.exports = {
 		colors: {
 			pinpoint: "#F1F152",
 			wisdom: "#AFB9B4",
+			experience: "#D4DCD8",
+			profound: "#69726E",
 			"dark-text": "#1F2725",
 		},
 		container: (theme) => ({
