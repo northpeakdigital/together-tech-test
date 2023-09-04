@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 function LogoMarquee() {
 	return (
 		<motion.div
-			className="mt-20 mb-40"
+			className="mt-16 mb-10 md:mt-20 md:mb-40"
 			animate={{
 				opacity: [0, 1],
 				y: [-20, 0],
 			}}
 		>
-			<p className="mb-16 block text-center">Trusted by global organisations</p>
+			<p className="mb-4 block text-center md:mb-16">Trusted by global organisations</p>
 			<div className="relative flex overflow-x-hidden">
 				<div className="animate-marquee whitespace-nowrap">
 					<span className="relative mx-10 inline-block h-[50px] w-[150px]">

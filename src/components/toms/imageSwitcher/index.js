@@ -11,29 +11,9 @@ function ImageSwitcher() {
 			animate={{
 				opacity: [0, 1],
 			}}
-			className="mx-auto flex max-w-screen-xl items-start justify-between py-4"
+			className="mx-auto max-w-screen-xl py-4 px-4 md:flex md:flex-row-reverse md:items-start md:justify-between"
 		>
-			<div className="relative aspect-[9/11] flex-[0_0_50%] bg-dark-text">
-				<Image
-					layout="fill"
-					className={`object-cover opacity-0 transition-all duration-700 ${chosenImage === 0 && "opacity-100"}`}
-					src="/images/switcher-0.jpg"
-					alt="Follow us on Twitter"
-				/>
-				<Image
-					layout="fill"
-					className={`object-cover opacity-0 transition-all duration-700 ${chosenImage === 1 && "opacity-100"}`}
-					src="/images/switcher-1.jpg"
-					alt="Follow us on Twitter"
-				/>
-				<Image
-					layout="fill"
-					className={`object-cover opacity-0 transition-all duration-700 ${chosenImage === 2 && "opacity-100"}`}
-					src="/images/switcher-2.jpg"
-					alt="Follow us on Twitter"
-				/>
-			</div>
-			<div className="mr-8 flex-[0_0_40%]">
+			<div className="mr-8 md:flex-[0_0_40%]">
 				<div className="">
 					<button className="block w-full border-t border-experience py-4 text-left text-xl text-dark-text" onClick={() => setChosenImage(0)} type="button">
 						Visualise
@@ -67,6 +47,26 @@ function ImageSwitcher() {
 						<p className="text-profound">Develop smarter strategies and make better decisions. Save lives and protect communities.</p>
 					</div>
 				</div>
+			</div>
+			<div className="relative aspect-[9/11] bg-dark-text md:flex-[0_0_50%]">
+				<Image
+					layout="fill"
+					className={`object-cover opacity-0 transition-all duration-700 ${chosenImage === 0 && "opacity-100"}`}
+					src="/images/switcher-0.jpg"
+					alt="Follow us on Twitter"
+				/>
+				<Image
+					layout="fill"
+					className={`object-cover opacity-0 transition-all duration-700 ${chosenImage === 1 && "opacity-100"}`}
+					src="/images/switcher-1.jpg"
+					alt="Follow us on Twitter"
+				/>
+				<Image
+					layout="fill"
+					className={`object-cover opacity-0 transition-all duration-700 ${chosenImage === 2 && "opacity-100"}`}
+					src="/images/switcher-2.jpg"
+					alt="Follow us on Twitter"
+				/>
 			</div>
 		</motion.div>
 	);

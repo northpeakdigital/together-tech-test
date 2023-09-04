@@ -16,9 +16,11 @@ function Header() {
 		>
 			<div className="header-inner mx-auto flex max-w-screen-xl items-center justify-between px-8">
 				<Link href="/" className="text-0 block">
-					<div className="relative h-[25px] w-[125px]">
-						<Image layout="fill" priority src="/svgs/logo.svg" alt="Follow us on Twitter" />
-					</div>
+					<a>
+						<div className="relative h-[25px] w-[125px]">
+							<Image layout="fill" priority src="/svgs/logo.svg" alt="Follow us on Twitter" />
+						</div>
+					</a>
 				</Link>
 				<nav className="hidden md:block">
 					<ul className="flex">
